@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="w-full px-4 sm:px-2 py-4 bg-zinc-50 dark:bg-black sticky top-0 border-b border-b-zinc-800">
-      <div className="container mx-auto flex justify-between items-center">
+    <nav className="w-full px-4 py-4 bg-zinc-50 dark:bg-black sticky top-0 border-b border-b-zinc-800">
+      <div className="container max-w-2xl mx-auto flex justify-between items-center">
         <Link href={"/"} className="flex gap-2 justify-center items-center">
           <div className="bg-violet-400 rounded-md w-8 h-8 aspect-square flex justify-center items-center text-black">
             <Send size={16} />

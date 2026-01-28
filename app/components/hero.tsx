@@ -22,7 +22,7 @@ export default function Hero() {
             desc="Queue-based delivery ensures non-blocking requests"
           />
           <FeatureCard
-            icon={<TriangleAlert className="text-red-400" size={16} />}
+            icon={<TriangleAlert className="text-orange-400" size={16} />}
             title={"DLQ support"}
             desc="Failed emails are logged for Inspection and retry"
           />
@@ -32,7 +32,6 @@ export default function Hero() {
             desc="Clean REST endpoints with JSON request/response"
           />
         </div>
-        <div></div>
       </div>
     </div>
   );

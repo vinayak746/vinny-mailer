@@ -1,6 +1,7 @@
 import Endpoint, { EndpointProps } from "./components/endpoint";
 import Hero from "./components/hero";
 import Navbar from "./components/navbar";
+import UsageSection from "./components/usage";
 
 export default function Home() {
   const endpoints: EndpointProps[] = [
@@ -16,7 +17,7 @@ export default function Home() {
       },
       resBody: {
         success: true,
-        messageId: "",
+        messageId: "msg_12...xyz",
         retries: 0,
       },
     },
@@ -56,6 +57,7 @@ export default function Home() {
             })}
           </div>
         </div>
+        <UsageSection />
       </main>
     </div>
   );

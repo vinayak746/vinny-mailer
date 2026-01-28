@@ -29,6 +29,8 @@ export const POST = verifySignatureAppRouter(
       req.headers.get("Upstash-Retries") as string,
     );
 
+    console.log({ upstashMsgId });
+
     try {
       await sendMail({
         to,

@@ -8,19 +8,29 @@ import { verifySignatureAppRouter } from "@upstash/qstash/dist/nextjs";
 export const POST = verifySignatureAppRouter(
   async (req: Request): Promise<Response> => {
     const body = await req.json();
-    const { to, subject, html } = body as {
+    const { to, subject, html, appName } = body as {
       to: string;
       subject: string;
       html: string;
+      appName?: string;
     };
 
-    await sendMail({
-      to,
-      subject,
-      html,
-    });
+    try {
+      await sendMail({
+        to,
+        subject,
+        html,
+        appName,
+      });
+    } catch (e: unknown) {
+      console.error(`Emailing to ${to} failed. (app: ${appName})`);
+      console.error(e);
+      return new Response("Email failed", {
+        status: 500,
+      });
+    }
 
-    return new Response(`Content Received`);
+    return new Response("Email Sent");
   },
   {
     currentSigningKey: QSTASH_CURRENT_SIGNING_KEY,

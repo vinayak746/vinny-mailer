@@ -19,7 +19,7 @@ export default function Endpoint({
 }: EndpointProps) {
   return (
     <div className="w-full rounded-md text-sm border border-zinc-800">
-      <div className="w-full flex flex-col gap-2 rounded-t-md text-xs bg-slate-950 px-4 py-4 border-b border-b-zinc-800">
+      <div className="w-full flex flex-col gap-2 rounded-t-md text-sm bg-slate-950 px-4 py-4 border-b border-b-zinc-800">
         <div className="flex items-center gap-4">
           {method ? (
             <span
@@ -44,7 +44,7 @@ export default function Endpoint({
               <ArrowRight className="text-orange-400" size={12} /> Request Body
             </span>
             <div className="px-2">
-              <pre className="text-xs px-4 py-2 rounded-md bg-zinc-900 text-zinc-300">
+              <pre className="text-sm px-4 py-2 rounded-md bg-zinc-900 text-zinc-300 whitespace-pre-wrap">
                 {JSON.stringify(reqBody, null, 2)}
               </pre>
             </div>
@@ -56,7 +56,7 @@ export default function Endpoint({
               <ArrowLeft className="text-violet-400" size={12} /> Response Body
             </span>
             <div className="px-2">
-              <pre className="text-xs px-4 py-2 rounded-md bg-zinc-900 text-zinc-300">
+              <pre className="text-sm px-4 py-2 rounded-md bg-zinc-900 text-zinc-300 whitespace-pre-wrap">
                 {JSON.stringify(resBody, null, 2)}
               </pre>
             </div>
@@ -64,7 +64,7 @@ export default function Endpoint({
         )}
         {code && (
           <div className="px-2">
-            <pre className="text-xs px-4 py-2 rounded-md bg-zinc-900 text-zinc-300">
+            <pre className="text-sm px-4 py-2 rounded-md bg-zinc-900 text-zinc-300 whitespace-pre-wrap">
               {code}
             </pre>
           </div>

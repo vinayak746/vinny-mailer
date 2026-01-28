@@ -12,8 +12,8 @@ export default function FeatureCard({ icon, title, desc }: FeatureCardProps) {
       <div className="p-1.5 w-fit rounded-md border border-zinc-800 bg-black group-hover:bg-zinc-800 group-hover:border-zinc-500 duration-200">
         {icon}
       </div>
-      <h5 className="text-sm font-bold">{title}</h5>
-      <p className="text-xs text-zinc-500">{desc}</p>
+      <h5 className="text-base font-bold">{title}</h5>
+      <p className="text-sm text-zinc-500">{desc}</p>
     </div>
   );
 }

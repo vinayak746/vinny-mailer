@@ -5,11 +5,11 @@ export default function Hero() {
   return (
     <div>
       <div className="text-center flex flex-col justify-center items-center gap-2">
-        <h2 className="font-bold text-3xl sm:text-4xl">
+        <h2 className="font-bold text-3xl sm:text-4xl md:text-6xl">
           <span>Send emails reliably,</span>{" "}
           <span className="text-violet-400">at scale</span>
         </h2>
-        <p className="text-sm text-zinc-400 max-w-md">
+        <p className="text-zinc-400 max-w-md">
           A production-ready microservice for email delivery with built-in Dead
           Letter Queue support to handle failures gracefully.
         </p>

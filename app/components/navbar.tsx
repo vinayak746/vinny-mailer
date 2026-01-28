@@ -9,9 +9,9 @@ export default function Navbar() {
           <div className="bg-violet-400 rounded-md w-8 h-8 aspect-square flex justify-center items-center text-black">
             <Send size={16} />
           </div>
-          <div className="flex flex-col leading-0 -translate-y-1.5">
+          <div className="flex flex-col leading-0">
             <span className="font-bold text-lg">m0b-mailer</span>
-            <span className="text-[.65rem] font-light text-zinc-400">
+            <span className="text-xs font-light text-zinc-400">
               Reliable email delivery with DLQ support
             </span>
           </div>

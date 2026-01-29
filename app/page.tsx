@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full min-h-screen items-center justify-center font-sans">
       <Navbar />
-      <main className="flex grow w-full max-w-7xl flex-col items-center justify-between py-16 sm:py-32 px-8 sm:px-16 dark:bg-black sm:items-start gap-16">
+      <main className="flex grow w-full max-w-7xl flex-col items-center justify-between py-16 sm:py-32 px-8 sm:px-16 sm:items-start gap-16">
         <Hero />
         <div className="px-8 py-2 w-full">
           <hr className="border-t border-t-zinc-800 w-full" />

@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowRight, Code2, CodeSquare } from "lucide-react";
+import { ArrowLeft, ArrowRight, CodeSquare } from "lucide-react";
 
 export interface EndpointProps {
   method?: "GET" | "POST";
@@ -23,12 +23,12 @@ export default function Endpoint({
         <div className="flex items-center gap-4">
           {method ? (
             <span
-              className={`rounded-full text-white dark:text-black font-semibold px-2 py-1 ${method === "GET" ? "bg-orange-500 dark:bg-orange-400" : "bg-violet-500 dark:bg-violet-400"}`}
+              className={`rounded-full text-white dark:text-black font-semibold px-2 py-1 ${method === "GET" ? "bg-orange-500 dark:bg-orange-400" : "bg-violet-600 dark:bg-violet-400"}`}
             >
               {method}
             </span>
           ) : (
-            <div className="text-lg text-blue-500 dark:text-violet-400 flex justify-center items-center gap-2">
+            <div className="text-lg text-violet-700 dark:text-violet-400 flex justify-center items-center gap-2">
               <CodeSquare />
               Code
             </div>

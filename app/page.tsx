@@ -43,7 +43,7 @@ export default function Home() {
       <main className="flex grow w-full max-w-7xl flex-col items-center justify-between py-16 sm:py-32 px-8 sm:px-16 sm:items-start gap-16">
         <Hero />
         <div className="px-8 py-2 w-full">
-          <hr className="border-t border-t-zinc-800 w-full" />
+          <hr className="border-t border-t-zinc-400 dark:border-t-zinc-800 w-full" />
         </div>
         <div className="w-full">
           <h3 className="text-2xl font-bold my-12">Available Endpoints</h3>
@@ -61,7 +61,7 @@ export default function Home() {
         <UsageSection />
 
         <div className="py-6 flex flex-col gap-8 w-full">
-          <p className="px-4 py-2 rounded-md bg-yellow-800/10 border border-yellow-700 w-full">
+          <p className="px-4 py-2 rounded-md bg-orange-800/10 border border-yellow-400 dark:border-yellow-900 w-full">
             Developed primarily for internal use and not maintained as a public
             product.
             <br />

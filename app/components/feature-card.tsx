@@ -14,8 +14,8 @@ export default function FeatureCard({ icon, title, desc }: FeatureCardProps) {
           {icon}
         </div>
       </div>
-      <h5 className="text-base font-bold">{title}</h5>
-      <p className="text-sm text-zinc-700 dark:text-zinc-500">{desc}</p>
+      <h3 className="text-base font-bold">{title}</h3>
+      <p className="text-sm text-zinc-700 dark:text-zinc-400">{desc}</p>
     </div>
   );
 }

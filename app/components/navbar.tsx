@@ -3,13 +3,13 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="w-full py-4 bg-zinc-50 dark:bg-black sticky top-0 border-b border-b-zinc-800">
+    <nav className="w-full px-4 py-4 bg-zinc-50/60 dark:bg-black/60 sticky top-0 border-b border-b-zinc-800 backdrop-blur-lg">
       <div className="container mx-auto flex justify-between items-center">
         <Link
           href={"/"}
           className="font-bold flex gap-2 justify-center items-center"
         >
-          <div className="bg-violet-400 rounded-md w-8 h-8 aspect-square flex justify-center items-center text-black">
+          <div className="bg-violet-500 dark:bg-violet-400 rounded-md w-8 h-8 aspect-square flex justify-center items-center text-white dark:text-black">
             <Send size={20} />
           </div>
           <div className="flex flex-col">

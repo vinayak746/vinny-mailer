@@ -12,8 +12,9 @@ export default function Hero() {
           </span>
         </h2>
         <p className="sm:text-lg md:text-xl text-zinc-700 dark:text-zinc-400 max-w-sm sm:max-w-2xl">
-          A production-ready microservice for email delivery with built-in Dead
-          Letter Queue support to handle failures gracefully.
+          A production-ready microservice for email delivery with built-in{" "}
+          <span className="text-nowrap">Dead Letter Queue</span> support to
+          handle failures gracefully.
         </p>
       </div>
       <div className="flex flex-col justify-center items-center py-12">

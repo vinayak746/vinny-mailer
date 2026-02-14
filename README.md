@@ -1,4 +1,4 @@
-# m0b mailer
+# vinny mailer
 
 A reliable, async email microservice built with Next.js and Upstash QStash.
 Designed for background email delivery with retries, delays, and dead-letter handling.

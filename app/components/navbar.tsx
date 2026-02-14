@@ -13,7 +13,7 @@ export default function Navbar() {
             <Send size={20} />
           </div>
           <div className="flex flex-col">
-            m0b-mailer
+            vinny-mailer
             <span className="text-xs font-light text-zinc-700 dark:text-zinc-300">
               Reliable email delivery with DLQ support
             </span>
@@ -21,7 +21,7 @@ export default function Navbar() {
         </Link>
         <Link
           className="hover:bg-orange-500 hover:dark:bg-orange-400 rounded-full p-2 hover:text-white hover:dark:text-black duration-200"
-          href={"https://github.com/mind0bender/m0b-mailer.git"}
+          href={"https://github.com/vinayak746/vinny-mailer.git"}
           title="View on GitHub"
         >
           <Code2 size={16} />

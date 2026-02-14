@@ -6,7 +6,7 @@ export default function Footer() {
       <span></span>
       <span>
         Built by{" "}
-        <Link href={"https://github.com/mind0bender/"}>Yash Gupta</Link>
+        <Link href={"https://github.com/vinayak746/"}>Vinayak Arora</Link>
       </span>
       <span>Bye!</span>
     </footer>

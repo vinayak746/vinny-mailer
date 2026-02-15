@@ -25,7 +25,7 @@ export default async function sendMail({
   to,
   subject,
   html,
-  appName = `kayaws`,
+  appName = `Blessing`,
 }: SendMailOptions): Promise<void> {
   const from: string = `"${appName}" <${SMTP_USER}>`;
 

@@ -95,3 +95,9 @@ POST /api/v1/send-dlq
 ## 📜 License
 
 MIT
+
+---
+
+## 🙏 Credits
+
+Created by [Yash Gupta (mind0bender)](https://github.com/mind0bender)
